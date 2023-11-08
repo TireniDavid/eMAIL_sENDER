@@ -29,6 +29,4 @@ jobs:
     - name: Upload artifacts
       if: always()
       uses: actions/upload-artifact@v2
-      with:
-        name: email-logs
-        path: /path/to/log/directory  # Replace with the path to your log files
+      
