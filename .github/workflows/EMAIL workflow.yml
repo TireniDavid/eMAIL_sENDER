@@ -17,6 +17,6 @@ jobs:
         python-version: 3.x
 
     - name: Run Python script
-      run: python eMAIL_sENDER/email_sender.py  # Specify the path to your Python script
+      run: email_sender.py  # Specify the path to your Python script
       env:
         emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
