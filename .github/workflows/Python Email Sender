@@ -1,0 +1,34 @@
+name: Python Email Sender
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  email_sender:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # Add any dependencies here
+
+    - name: Run Python script
+      run: python email_sender.py  # Replace 'your_script.py' with the actual file name
+      env:
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # Set your email password as a secret in the GitHub repository
+
+    - name: Upload artifacts
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: email-logs
+        path: /path/to/log/directory  # Replace with the path to your log files
