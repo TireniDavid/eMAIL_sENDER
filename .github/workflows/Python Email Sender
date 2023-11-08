@@ -24,7 +24,7 @@ jobs:
     - name: Run Python script
       run: python email_sender.py  # Replace 'your_script.py' with the actual file name
       env:
-        EMAIL_PASSWORD: ${{ secrets.EMAILSENDERPASSWORD }}  # Set your email password as a secret in the GitHub repository
+        emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}  # Set your email password as a secret in the GitHub repository
 
     - name: Upload artifacts
       if: always()
