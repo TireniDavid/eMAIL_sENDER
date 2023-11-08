@@ -1,4 +1,4 @@
-name: Python Email Sender
+Nname: Python Email Sender
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
     - name: Run Python script
       run: python email_sender.py  # Replace 'your_script.py' with the actual file name
       env:
-        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # Set your email password as a secret in the GitHub repository
+        EMAIL_PASSWORD: ${{ secrets.EMAILSENDERPASSWORD }}  # Set your email password as a secret in the GitHub repository
 
     - name: Upload artifacts
       if: always()
