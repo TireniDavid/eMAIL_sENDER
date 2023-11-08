@@ -1,7 +1,7 @@
 name: Python Email Sender
 
 on:
- workflow_dispatch
+  workflow_dispatch
 
 jobs:
   email_sender:
@@ -16,15 +16,7 @@ jobs:
       with:
         python-version: 3.x
 
-    - name: Install dependencies
-      run: pip install -r requirements.txt  # Add any dependencies here
-
     - name: Run Python script
-      run: python email_sender.py  # Replace 'your_script.py' with the actual file name
+      run: python eMAIL_sENDER/email_sender.py  # Specify the path to your Python script
       env:
-        emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}  # Set your email password as a secret in the GitHub repository
-
-    - name: Upload artifacts
-      if: always()
-      uses: actions/upload-artifact@v2
-      
+        emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
