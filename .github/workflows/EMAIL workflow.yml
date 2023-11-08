@@ -14,9 +14,9 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: 3.8
 
     - name: Run Python script
-      run: python eMAIL_sENDER/email_sender.py
+      run: python email_sender.py
       env:
         emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
