@@ -1,4 +1,4 @@
-Nname: Python Email Sender
+name: Python Email Sender
 
 on:
   push:
