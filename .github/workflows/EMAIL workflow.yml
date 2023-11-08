@@ -1,4 +1,4 @@
-name: Python Email Sender
+name: EMAIL workflow
 
 on:
   workflow_dispatch
