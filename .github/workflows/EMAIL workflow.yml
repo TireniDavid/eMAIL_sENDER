@@ -18,6 +18,6 @@ jobs:
 
     - name: Run Python script
       run: python email_sender.py
-      working-directory: eMAIL_sENDER/.github/workflows/
+      working-directory: eMAIL_sENDER
       env:
         emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
