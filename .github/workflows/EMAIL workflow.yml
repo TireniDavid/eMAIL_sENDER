@@ -8,17 +8,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository content
+    - name: Checkout code
       uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: '3.8'
-        cache: 'pip' # caching pip dependencies
-        run: pip install -r requirements.txt
+        python-version: 3.9
 
     - name: Run Python script
-      run: python email_sender.py
+      run: python eMAIL_sENDER/email_sender.py
       env:
         emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
