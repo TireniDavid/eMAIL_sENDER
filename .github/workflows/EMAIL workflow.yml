@@ -17,6 +17,4 @@ jobs:
         python-version: 3.9
    
     - name: Run Python script
-      run: |
-       python -c "import os; print('Email Password:', os.environ.get('EMAILPASSWORD'))"
-       python email_sender.py ${{ secrets.EMAILPASSWORD }}
+      run: python email_sender.py ${{ secrets.EMAILPASSWORD }}
