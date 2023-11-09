@@ -17,7 +17,7 @@ jobs:
         python-version: 3.9
 
     - name: Run Python script
-      run: python email_sender.py
-      working-directory: eMAIL_sENDER
+      run: python google/email_sender.py
+      
       env:
         emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
