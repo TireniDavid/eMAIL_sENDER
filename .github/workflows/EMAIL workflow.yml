@@ -17,6 +17,6 @@ jobs:
         python-version: 3.9
 
     - name: Run Python script
-      run: python D:\email_sender.py
+      run: python email_sender.py
       env:
         emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
