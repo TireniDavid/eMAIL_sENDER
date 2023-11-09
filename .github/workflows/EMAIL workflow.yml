@@ -18,6 +18,5 @@ jobs:
 
     - name: Run Python script
       run: python email_sender.py
-      working-directory: email_sender.py
       env:
         emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
