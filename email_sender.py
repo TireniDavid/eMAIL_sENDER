@@ -39,7 +39,7 @@ em.set_content(html_body, subtype= 'html')
 
 #Attach an image inline
 
-with open(r'/eMAIL_sENDER/amazon.png', 'rb') as img_file:
+with open(r'\AMAZON.png', 'rb') as img_file:
     img_data = img_file.read()
     em.add_attachment(img_data, maintype='image', subtype='png', cid='image1')
 
