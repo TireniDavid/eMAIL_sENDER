@@ -3,7 +3,7 @@ from email.message import EmailMessage
 import ssl, smtplib
 
 
-EMAILSENDERPASSWORD = os.environ["emailsenderpassword"] = "zkig hfil btzi htac"
+EMAILSENDERPASSWORD = os.environ["emailsenderpassword"] 
 
 email_sender = 'eldenbe17@gmail.com'
 email_password = EMAILSENDERPASSWORD
