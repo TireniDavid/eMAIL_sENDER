@@ -18,3 +18,8 @@ jobs:
    
     - name: Run Python script
       run: python email_sender.py ${{ secrets.EMAILPASSWORD }}
+      
+   - name: Debug Environment Variable
+     run: echo "EMAILPASSWORD: ${{ secrets.EMAILPASSWORD }}"
+- name: Run Python script
+  run: python email_sender.py ${{ secrets.EMAILPASSWORD }}
