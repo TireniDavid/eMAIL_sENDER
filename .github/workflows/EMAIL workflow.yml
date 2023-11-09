@@ -17,6 +17,7 @@ jobs:
         python-version: 3.8
 
     - name: Run Python script
-      run: python eMAIL_sENDER/.github/workflows/email_sender.py
+      run: python email_sender.py
+      working-directory: eMAIL_sENDER/.github/workflows/
       env:
         emailsenderpassword: ${{ secrets.EMAILSENDERPASSWORD }}
