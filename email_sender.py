@@ -4,6 +4,7 @@ import ssl, smtplib
 
 email_sender = 'eldenbe17@gmail.com'
 email_password = os.environ.get('EMAILPASSWORD')
+print("Retrieved Password:", email_password)
 
 email_receiver = 'tirenioluwa.adek@bulldogs.aamu.edu'
 
