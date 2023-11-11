@@ -8,7 +8,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout code out
       uses: actions/checkout@v3
 
     - name: Set up Python
