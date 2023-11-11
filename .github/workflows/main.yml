@@ -1,4 +1,4 @@
-name: EMAIL workflow
+name: new_workflow
 
 on:
   workflow_dispatch:
