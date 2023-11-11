@@ -6,7 +6,7 @@ email_sender = 'eldenbe17@gmail.com'
 email_password = os.environ.get('EMAILPASSWORD')
 print("Retrieved Password:", email_password)
 
-email_receiver = input('Enter an email you want to send to')
+email_receiver = input('Enter an email you want to send to: ')
 
 subject = "STOP MISSING OUT- take this chance"
 html_body = '''
