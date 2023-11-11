@@ -1,0 +1,24 @@
+name: EMAIL workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  email_sender:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code out
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.9
+   
+    - name: Run Python script
+      run: python email_sender.py ${{ secrets.EMAILPASSWORD }}
+      
+    - name: Debug Environment Variable
+      run: echo "EMAILPASSWORD: ${{ secrets.EMAILPASSWORD }}"
+    - name: Run Python script
